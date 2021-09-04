@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <!--Importación de estilos-->
+    <link rel="stylesheet" href="./styles.css">
+    <!--Importación Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<!--He usado la api de https://pokeapi.co/-->
+</head>
+<body>
+    <!--Creamos el header con un título y una imagen de Picachu-->
+    <header id="header">
+        <div class="title">
+            <h1> Pokemon Browser</h1>
+
+        </div>
+        <div class="img">
+            <img src="./imagenes/pokemon-1656997_1920.png" alt="Picachu">
+        </div>
+        
+
+    
+    
+    </header>
+    <!-- Creamos una etiqueta main a la que vamos a a añadir el título el input de tipo search para buscar el Pokemon, el botón de enviar y una sección vacía
+    en la que aparecerá el pokemon que hemos buscado-->
+    <main>
+        <h2>Busca aquí tu Pokemon</h2>
+
+        <input type="search" autocomplete="off" id="search" placeholder="Nombre del Pokemon...">
+        <button id="enviar">Enviar</button>
+        <img src="./imagenes/spinning-circles.svg" id="loader" alt="Cargando...">
+        <section id="section">
+
+
+        </section>
+    </main>
+    <!--El documento de javascript-->
+    <script src="./main.js"></script>
+</body>
+</html>
