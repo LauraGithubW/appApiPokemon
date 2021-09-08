@@ -69,6 +69,7 @@ $submit.addEventListener("click",  async e=>{
         
     let message= err.statusText || "No existe el pokemon que estás buscando.";
     $section.innerHTML=`<p class="error">Error ${err.status} <b>${message}</<b></p>`;
+         $loader.style.display="none";
         }
     
 
