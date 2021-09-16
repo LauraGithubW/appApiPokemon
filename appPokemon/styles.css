@@ -1,0 +1,171 @@
+
+/*Le quito los estilos por defecto*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Estilos del header*/
+
+#header{
+    display:flex;
+    flex-wrap: nowrap;
+    
+    
+    align-items: center;
+    width: 100vw;
+    height:20vh;
+    background-color: rgb(248, 247, 157);
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    
+/*Estilos del body*/
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url("./imagenes/ball-1600483_1920.jpg");
+    background-position: center;
+}
+
+/*Estilos del título principal*/
+
+
+.title{
+    display: flex;
+    
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 1rem;
+    color:rgba(34, 67, 252, 0.836)
+    
+    
+}
+.title h1{
+
+    letter-spacing: 2px;
+
+}
+
+/*Estilos de la imagen de Picachu de dentro del header*/
+.img{
+    
+    margin-top: 1rem;
+    
+    display: flex;
+    margin-right: 2%;
+}
+
+.img img{
+
+    width:100px;
+    
+    
+}
+/*Estilos de la etiqueta main*/
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h2{
+    margin-top: 4%;
+}
+/*Estilos del input en el que introduciremos el Pokemon*/
+main #search{
+
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 5px;
+    border:2px solid rgb(197, 193, 193)
+}
+
+/*Estilos del botón enviar*/
+main #enviar{
+    margin-top: 1%;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: rgb(250, 242, 127);
+    border: 1px solid gray;
+    transition: 0.3s all ease-in-out;
+}
+main #enviar:hover{
+    background-color: rgb(255, 233, 38) ;
+    cursor:pointer;
+}
+/*Estilos de la tarjeta que se va a crear dinámicamente  accediendo a la API de Pokemon*/
+.card{
+    z-index: 5;
+    display:flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width:20vw;
+    height: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 230, 0);
+    border-radius: 20px;
+    border:4px solid gray;
+    margin-bottom: 5%;
+    transition:0.5s all ease-in-out;
+
+}
+.card:hover{
+    transform:scale(1.05,1.05);
+    
+}
+.card h2{
+    display: flex;
+    text-align: center;
+    margin-top:8%;
+}
+.card img:hover{
+    transform:rotate(340deg);
+}
+
+
+.card ul{
+    width:78%;
+    margin-bottom:8%;
+    margin-left: 8%;
+    
+}
+
+/*Estilos del mensaje de error que creamos en el catch de fetch*/
+
+.error{
+    display:flex;
+    background-color: rgb(241, 82, 82);
+    border-radius: 8px;
+    width:70%;
+    text-align: center;
+    margin-left:15%;
+    margin-top:5%;
+    padding: 5%;
+    border:2px dashed rgb(0, 0, 0);
+}
+
+/*Estilos del botón de cierre de la tarjeta con el Pokemon que se creará dinámicamente junto a la tarjeta*/
+
+#cerrar{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: rgb(250, 242, 127);
+    border: 1px solid gray;
+    transition: 0.3s all ease-in-out;
+    
+}
+#cerrar:hover{
+    background-color: rgb(255, 233, 38) ;
+    cursor:pointer;
+
+}
+
+/*****************************************Fin estilos********************************/
