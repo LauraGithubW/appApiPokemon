@@ -19,7 +19,7 @@ $submit.addEventListener("click",  async e=>{
     try{
 
         $loader.style.display="block";
-      let  $search=d.getElementById("search").value;
+      let  $search=d.getElementById("search").value.toLowerCase();
         
        
         
